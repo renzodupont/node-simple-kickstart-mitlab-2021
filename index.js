@@ -24,9 +24,10 @@ app.use(bodyParser.json());
 // -------------------------------------------
 app.use(express.static("public"));
 
-await db.read();
-// init the data store
-db.data = db.data || { users: [] };
+db.read().then(function () {
+  // init the data store
+  db.data = db.data || { users: [] };
+});
 
 // server is running
 app.get("/", function (req, res) {
