@@ -1,0 +1,28 @@
+{
+  "name": "node-simple-kickstart-mitlab-2021-renzodupont",
+  "version": "1.0.0",
+  "description": "Node Simple Kickstart Renzo Dupont",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renzodupont/node-simple-kickstart-mitlab-2021.git"
+  },
+  "author": "Renzo Dupont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renzodupont/node-simple-kickstart-mitlab-2021/issues"
+  },
+  "homepage": "https://github.com/renzodupont/node-simple-kickstart-mitlab-2021#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^3.0.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
