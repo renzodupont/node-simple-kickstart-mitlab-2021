@@ -43,16 +43,11 @@ app.get("/accounts", function (req, res) {
 app.post("/accounts", function (req, res) {
   var user = {
     name: req.body.name,
-    dob: req.body.dob,
     email: req.body.email,
     username: req.body.username,
     password: req.body.password,
     phone: req.body.phone,
-    streetaddress: req.body.streetaddress,
-    citystatezip: req.body.citystatezip,
-    latitude: req.body.latitude,
-    longitude: req.body.longitude,
-    avatar: req.body.avatar,
+    address: req.body.address,
   };
   db.data.users.push(user);
   db.write();
